@@ -543,15 +543,9 @@ footer{background:#06090f;padding:2.5rem 5%;display:flex;align-items:center;just
     <!-- MAP -->
     <div class="map-frame-wrap rv-r">
       <div class="map-badge"><span class="map-badge-dot"></span>LOTAN Services — Nairobi, Kenya</div>
-      <iframe
-        title="LOTAN Services Limited — Nairobi, Kenya"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=36.6883%2C-1.3616%2C37.1066%2C-1.1617&layer=mapnik&marker=-1.2921%2C36.8219"
-        allowfullscreen loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        aria-label="Interactive map showing LOTAN Services Limited coverage in Nairobi Kenya">
-      </iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.43284975772!2d36.7203718471659!3d-1.3021282330406285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11655c311541%3A0x9dd769ac1c10b897!2sNairobi%20County!5e0!3m2!1sen!2ske!4v1779888414599!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div class="map-logo-badge">
-        <img src="logo.png" alt="LOTAN Services Limited"
+        <img src="https://claude.ai/api/ea0e6574-71a2-46d5-8c17-aedab36d541d/files/810e09b2-aa7c-4a19-89f6-a1f8e45cf5da/preview" alt="LOTAN Services Limited"
              onerror="this.style.display='none'">
       </div>
     </div>
@@ -817,6 +811,9 @@ function toggleMenu(){document.getElementById('mobile-menu').classList.toggle('o
 /* ── OFFLINE ── */
 function checkOnline(){const b=document.getElementById('offline-banner');navigator.onLine?b.classList.remove('show'):b.classList.add('show');}
 window.addEventListener('online',checkOnline);window.addEventListener('offline',checkOnline);
+function checkOnline(){const b=document.getElementById('offline-banner');navigator.onLine?b.classList.remove('show'):b.classList.add('show');}
+window.addEventListener('online',checkOnline);window.addEventListener('offline',checkOnline);
+checkOnline(); // 
 
 /* ── SWIPE ── */
 function initSwipe(){
